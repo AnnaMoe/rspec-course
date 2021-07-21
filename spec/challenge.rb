@@ -19,7 +19,7 @@ def maskify(credit_card)
     unless is_first_char?(index) || is_last_4_chars?(index, credit_card_array.length)
       if is_a_digit?(char)
         masked << "#"
-      else
+      else  
         masked << char
       end
     else
